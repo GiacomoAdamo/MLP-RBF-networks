@@ -5,7 +5,7 @@ In this repo MLP and RBF neural networks for regression are implemented from scr
 
 For each network, three different optimization techniques are tested:
  - Full Minimization
- - Two blocks methods
+ - Two blocks method
  - Decomposition method
 
 For each method a detailed explanation is provided in the sections below.
