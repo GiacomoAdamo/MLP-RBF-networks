@@ -4,7 +4,7 @@ In this repo MLP and RBF neural networks for regression are implemented from scr
 ## Description
 
 For each network, three different optimization techniques are tested:
- - Full Minimiziation
+ - Full Minimization
  - Two blocks methods
  - Decomposition method
 
@@ -15,6 +15,7 @@ For each method a detailed explanation is provided in the sections below.
 ### Dependencies andExecuting program
 
  - Download the repo with all the subdirectiories of a subset of interest
+ - Check if Python 3.10 is installed on your machine 
  - Run the following command to install al the dependencies required for this project
 ```
 pip install -r requirements.txt

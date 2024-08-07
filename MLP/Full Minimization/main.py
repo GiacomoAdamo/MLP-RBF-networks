@@ -1,6 +1,8 @@
+from utilities import *
+
 # Ininizialize sedd
 
-np.random.seed(1806447)
+np.random.seed(42)
 
 # Import and read the data from DATA.csv file
 data = pd.read_csv("DATA.csv")
