@@ -1,5 +1,5 @@
 # MLP-RBF networks
-In this project MultiLayer Perceptron (MLP) and Radial Basis Function (RBF) neural networks for regression are implemented from scratch.
+In this project MultiLayer Perceptron (MLP) and Radial Basis Function (RBF) neural networks for 2D function regression are implemented from scratch.
 
 ## Description
 
@@ -24,6 +24,16 @@ pip install -r requirements.txt
 ```
 python main.py
 ```
+## Data 
+
+### Data format
+
+Here, input data are not provided but is important to pass as input a CSV file with the following format:
+
+ - X1 : input variable first dimension 
+ - X2 : input variable second dimension
+ - Y  : output variable
+
 
 ## Authors
 
