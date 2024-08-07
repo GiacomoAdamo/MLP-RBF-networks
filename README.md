@@ -12,7 +12,7 @@ For each method a detailed explanation is provided in the sections below.
 
 ## Getting Started
 
-### Dependencies andExecuting program
+### Dependencies and Executing program
 
  - Download the repo with all the subdirectiories of a subset of interest
  - Check if Python 3.10 is installed on your machine 
