@@ -1,6 +1,6 @@
 from utilities import *
 
-# Ininizialize seed
+# Inizialize seed
 np.random.seed(42)
 
 # Import and read the data from DATA.csv file
