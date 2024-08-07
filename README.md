@@ -1,4 +1,4 @@
-# MLP-RBF-networks
+# MLP-RBF networks
 In this repo MLP and RBF neural networks for regression are implemented from scratch.
 
 ## Description
