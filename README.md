@@ -1,5 +1,5 @@
 # MLP-RBF networks
-In this repo MLP and RBF neural networks for regression are implemented from scratch.
+In this project MultiLayer Perceptron (MLP) and Radial Basis Function (RBF) neural networks for regression are implemented from scratch.
 
 ## Description
 
