@@ -10,6 +10,10 @@ For each network, three different optimization techniques are tested:
 
 For each method a detailed explanation is provided in the sections below.
 
+### Full Minimization 
+
+### Two blocks method
+
 ## Getting Started
 
 ### Dependencies and Executing program
