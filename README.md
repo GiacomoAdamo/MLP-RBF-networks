@@ -21,7 +21,7 @@ Shallow Feedforward Neural Network (FNN) (one only hidden layer) is built, both
 E(ω;π) = (1/2P) \sum_{p=1}^P \left(f\left(x^p\right) - y^p\right)^2 + (\rho /2) ||\omega||^2
 ```
 
- For the MPL case the network structure consists in the following formula:
+ For the MLP case the network structure consists in the following formula:
 
  ``` math
 f(x) = \sum_{j=1}^N v_j g\left(\sum_{i=1}^n w_{ji}x_i + b_j\right)
