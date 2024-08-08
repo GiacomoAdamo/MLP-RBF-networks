@@ -1,5 +1,5 @@
 # MLP-RBF networks
-In this project MultiLayer Perceptron (MLP) and Radial Basis Function (RBF) neural networks for 2D function regression are implemented from scratch.
+In this project MultiLayer Perceptron (MLP) and Radial Basis Function (RBF) neural networks for 2D function regression are implemented from scratch. For the RBF a Gaussian Kernel was employed.
 
 ## Description
 
@@ -10,12 +10,19 @@ For each network, three different optimization techniques are tested:
 
 For each method a detailed explanation is provided in the sections below.
 
+### Target problem
+
+
+
 ### Full Minimization 
 
-The target problem is a highly non-linear and non-convex, therefore the goal of the optimization procedure is not to find the global minimizer of the regularized training error, but to find one of the local minimizers. In this project a batch method has been choosen rather than an online method. 
+The target problem is a highly non-linear and non-convex, therefore the goal of the optimization procedure is not to find the global minimizer of the regularized training error, but to find one of the local minimizers. In this project a batch method has been choosen rather than an online method.
+
 In addition, to speed up the performance of the algorithm, we implemented the forward propagation and the back propagation in a vectorized form, using the python broadcasting and the native numpy function for handling matrices operations, without loops. 
+
 The python routine used to solve the optimization problem is scipy.optimize.minimize employing as unconstraint first order derivative methods the BFGS one.
-To enhance the performances of the method, it employs the callable function of the gradient so as not to have it estimated by the algortim. The accuracy of our computation of the gradient is checked using the function check grad leading to a difference between the gradient computed by us and the one evaluated with finite differences of the order of magnitude of 10−6.
+
+To enhance the performances of the method, it employs the callable function of the gradient so as not to have it estimated by the algorithm. The accuracy of our computation of the gradient is checked using the function check grad leading to a difference between the gradient computed by us and the one evaluated with finite differences of the order of magnitude of $10^−6.
 
 ### Two blocks method
 
