@@ -31,8 +31,10 @@ where ω = (v,w,b) and g() is an activation function (es. signmoid, tanh)
 
  For the RBF network instead the network structure is:
 
- bbb
-
+ ``` math
+f(x) = \sum_{j=1}^N v_{j} \phi(||x^i - c_j||)
+```
+where ω = (v,w,b) and g() is an activation function (es. signmoid, tanh)
  
 ### Full Minimization 
 
