@@ -34,7 +34,7 @@ where ω = (v,w,b) and g() is an activation function (es. signmoid, tanh)
  ``` math
 f(x) = \sum_{j=1}^N v_{j} \phi(||x^i - c_j||)
 ```
-where ω = (v,w,b) and g() is an activation function (es. signmoid, tanh)
+where ω = (v,c) and \phi is the Gaussian kernel
  
 ### Full Minimization 
 
