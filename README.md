@@ -76,12 +76,12 @@ choose, as initial point W, the one that guarantees the lowest regularized train
 The
 optimization problem is now the following:
 ``` math
-𝑚𝑖𝑛_𝑣 (1/2𝑃) ‖(𝛷 \sqrt{𝜌_1 𝑃} 𝐼_𝑁)^T 𝑣 − ( 𝑌 -0_𝑁)^T‖^2
+𝑚𝑖𝑛_𝑣 (1/2𝑃) ‖(𝛷 \sqrt{𝜌_1 𝑃} 𝐼_𝑁)^T 𝑣 − ( 𝑌 0_𝑁)^T‖^2
 ``` 
-So, we implemented two functions that allow us to concatenate first the matrix 𝛷 with √𝜌1𝑃𝐼𝑁, then the column vector 𝑌 with a
-vector of 𝑁 zeros. As in question 2.1 the optimization problem is a linear least square problem (LLSQ). So, the optimization routine
+So, we implemented two functions that allow us to concatenate first the matrix 𝛷 with √𝜌1𝑃 𝐼_𝑁, then the column vector 𝑌 with a
+vector of 𝑁 zeros. The optimization problem is a linear least square problem (LLSQ). So, the optimization routine
 used is the function lsq_linear imported from scipy.optimize. Before the code completion, we checked possible errors in the
-gradient evaluation using the function scipy.optimize.check_grad and obtaining an error of about 10-6.
+gradient evaluation using the function scipy.optimize.check_grad.
 
 For the unsupervised selection of the centers, we tried two different methods:
 1) Random selection of patterns in the training set
