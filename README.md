@@ -12,7 +12,7 @@ For each method a detailed explanation is provided in the sections below.
 
 ### Target problem
 
-Shallow Feedforward Neural Network (FNN) (one only hidden layer) were built, both
+Shallow Feedforward Neural Network (FNN) (one only hidden layer) is built, both
  a MLP and a RBF network, that provides the model f(x) which approximates the true function
  F. We denote by π the hyper-parameters of the network to be settled by means of an heuristic
  procedure and ω the parameters to be settled by minimizing the regularized training error:
