@@ -106,7 +106,7 @@ convex block in an exact way using the lsq_linear solver; concerning the non-con
 ### Dependencies and Executing program
 
  - Download the repo with all the subdirectiories of a subset of interest
- - Check if Python 3.10 is installed on your machine 
+ - Check if Python 3.10 is installed on your machine with pip module
  - Run the following command to install al the dependencies required for this project
 ```
 pip install -r requirements.txt
