@@ -47,14 +47,24 @@ To enhance the performances of the method, it employs the callable function of t
 ### Two blocks method
 
 Once 𝑊 (the first layer parameter) is fixed, the problem of minimizing the regularized training error is a quadratic convex problem with a unique global
-minimizer. The problem can be reformulated in the form of 1
-2𝑃 ‖𝐴𝑉 − 𝐵‖2
-, where 𝑉 is the 𝑁 × 1 vector of the output weights,
+minimizer. The problem can be reformulated in the form of:
+
+``` math
+(1/2𝑃) ‖𝐴𝑉 − 𝐵‖^2
 while 𝐴 = ((𝑔(𝑊𝑋 + 𝑏)𝑇
 √𝜌𝑃𝐼𝑁
 ) 𝑎𝑛𝑑 𝐵 = ( 𝑌
 0𝑁
-).
+)
+```
+where 
+``` math
+𝐴 = (𝑔(𝑊𝑋 + 𝑏)^𝑇
+\sqrt{𝜌 𝑃}𝐼_𝑁)^T
+```
+
+``` math
+``` 
 To solve this problem, we first constructed the matrices 𝐴 and 𝐵. Then we used the solver lsq_linear from scipy.optimize. This
 method requires as mandatory parameters 𝐴, 𝐵. Concerning the other parameters, we used the default values. This solver finds
 the global minimizer of the linear least square problem with 0 iterations.
