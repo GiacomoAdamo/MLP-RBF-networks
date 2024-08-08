@@ -61,7 +61,7 @@ where
 ```
 
 ``` math
- 𝐵 = ( 𝑌 0_𝑁)
+ 𝐵 = ( 𝑌 0_𝑁)^T
 ``` 
 To solve this problem, we first constructed the matrices 𝐴 and 𝐵. Then we used the solver lsq_linear from scipy.optimize. This
 method requires as mandatory parameters 𝐴, 𝐵. Concerning the other parameters, we used the default values. This solver finds
