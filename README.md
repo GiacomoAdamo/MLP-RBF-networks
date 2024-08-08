@@ -51,11 +51,6 @@ minimizer. The problem can be reformulated in the form of:
 
 ``` math
 (1/2𝑃) ‖𝐴𝑉 − 𝐵‖^2
-while 𝐴 = ((𝑔(𝑊𝑋 + 𝑏)𝑇
-√𝜌𝑃𝐼𝑁
-) 𝑎𝑛𝑑 𝐵 = ( 𝑌
-0𝑁
-)
 ```
 where 
 ``` math
@@ -64,6 +59,7 @@ where
 ```
 
 ``` math
+ 𝐵 = ( 𝑌 0_𝑁)
 ``` 
 To solve this problem, we first constructed the matrices 𝐴 and 𝐵. Then we used the solver lsq_linear from scipy.optimize. This
 method requires as mandatory parameters 𝐴, 𝐵. Concerning the other parameters, we used the default values. This solver finds
