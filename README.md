@@ -111,7 +111,7 @@ convex block in an exact way using the lsq_linear solver; concerning the non-con
 ```
 pip install -r requirements.txt
 ```
-- To run a specific network of optimization technique, launch the command
+- To run a specific network or a optimization technique, launch the command
 ```
 python main.py
 ```
