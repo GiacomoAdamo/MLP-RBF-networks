@@ -12,7 +12,31 @@ For each method a detailed explanation is provided in the sections below.
 
 ### Target problem
 
+Shallow Feedforward Neural Network (FNN) (one only hidden layer) were built, both
+ a MLP and a RBF network, that provides the model f(x) which approximates the true function
+ F. We denote by π the hyper-parameters of the network to be settled by means of an heuristic
+ procedure and ω the parameters to be settled by minimizing the regularized training error:
+ 
+$ E(ω;π) = 1/2P
+ P
+ ∑
+ p=1
+ f (xp)−yp 2+ ρ
+ 2
+ $
+ where the hyper parameter ρ stays in the range [10−5÷10−3].
+ ∥ω∥2
 
+ For the MPL case the network structure consists in the following formula:
+
+ aaa 
+
+
+ For the RBF network instead the network structure is:
+
+ bbb
+
+ 
 ### Full Minimization 
 
 The target problem is a highly non-linear and non-convex, therefore the goal of the optimization procedure is not to find the global minimizer of the regularized training error, but to find one of the local minimizers. In this project a batch method has been choosen rather than an online method.
@@ -21,7 +45,7 @@ In addition, to speed up the performance of the algorithm, we implemented the fo
 
 The python routine used to solve the optimization problem is scipy.optimize.minimize employing as unconstraint first order derivative methods the BFGS one.
 
-To enhance the performances of the method, it employs the callable function of the gradient so as not to have it estimated by the algorithm. The accuracy of our computation of the gradient is checked using the function check grad leading to a difference between the gradient computed by us and the one evaluated with finite differences of the order of magnitude of $'10^−6'$.
+To enhance the performances of the method, it employs the callable function of the gradient so as not to have it estimated by the algorithm. The accuracy of our computation of the gradient is checked using the function check grad leading to a difference between the gradient computed by us and the one evaluated with finite differences of the order of magnitude of $10^{−6}$.
 
 ### Two blocks method
 
@@ -46,7 +70,7 @@ choose, as initial point W, the one that guarantees the lowest regularized train
 
 #### RBF case
 
-The structure of the code is obviously very similar to the question 1.2 but the problem to be solved changes a lot. In fact, the
+The
 optimization problem is now the following:
 𝑚𝑖𝑛
 𝑣
