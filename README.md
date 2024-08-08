@@ -3,10 +3,10 @@ In this project MultiLayer Perceptron (MLP) and Radial Basis Function (RBF) neur
 
 ## Description
 
-For each network, three different optimization techniques are tested:
+For these network, three different optimization techniques are tested:
  - Full Minimization
  - Two blocks method
- - Decomposition method
+ - Decomposition method (only MLP)
 
 For each method a detailed explanation is provided in the sections below.
 
