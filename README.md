@@ -16,20 +16,17 @@ Shallow Feedforward Neural Network (FNN) (one only hidden layer) is built, both
  a MLP and a RBF network, that provides the model f(x) which approximates the true function
  F. We denote by π the hyper-parameters of the network to be settled by means of an heuristic
  procedure and ω the parameters to be settled by minimizing the regularized training error:
- 
-$ E(ω;π) = 1/2P
- P
- ∑
- p=1
- f (xp)−yp 2+ ρ
- 2
- $
- where the hyper parameter ρ stays in the range [10−5÷10−3].
- ∥ω∥2
+
+``` math
+E(ω;π) = (1/2P) \sum_{p=1}^P \left(f\left(x^p\right) - y^p\right)^2 + (\rho /2) ||\omega||^2
+```
 
  For the MPL case the network structure consists in the following formula:
 
- aaa 
+ ``` math
+f(x) = \sum_{j=1}^N v_j g\left(\sum_{i=1}^n w_{ji}x_i + b_j\right)
+```
+where ω = (v,w,b) and g() is an activation function (es. signmoid, tanh)
 
 
  For the RBF network instead the network structure is:
@@ -128,7 +125,7 @@ Here, input data are not provided but is important to pass as input a CSV file w
 
 ## Authors
 
-Author name and contact info
+Authors name and contact info
 
 - [Giacomo Mattia Adamo](www.linkedin.com/in/giacomo-mattia-adamo-b36a831ba)
 - Simone Foà
